@@ -8,6 +8,6 @@ from clases.cls_Bdd2 import BaseDD
 
 print("Postgres")
 
-database=BaseDD(servidor='Ares2', usuario='root',clave='Emilita01',db='Prueba',puerto='5432',drver='', motor='Postgres')
+database=BaseDD(servidor='Ares2', usuario='postgres',clave='Emilita01',db='Prueba',puerto='5432',drver='', motor='Postgres')
 print(database)
 database.ejecutar_query("select 'Hola'")
