@@ -1,9 +1,9 @@
-import psycopg
-from psycopg import Error
+import psycopg2
+from psycopg2 import Error
 
 try:
     # Connect to an existing database
-    connection = psycopg.connect(user="postgres",
+    connection = psycopg2.connect(user="postgres",
                                   password="Emilita01",
                                   host="127.0.0.1",
                                   port="5432",
