@@ -14,8 +14,8 @@ db='master'
 puerto=5000
 #drver='Adaptive Server Enterprise'
 #drver='/usr/lib/x86_64-linux-gnu/libodbc.so'
-#drver='/opt/sap/DataAccess64/ODBC/lib/libsybdrvodb.so'
-drver='/opt/sap/OCS-16_0/python/python26_64r/lib/sybpydb.so'
+drver='/opt/sap/DataAccess64/ODBC/lib/libsybdrvodb.so'
+#drver='/opt/sap/OCS-16_0/python/python26_64r/lib/sybpydb.so'
 #drver='Sybase ASE ODBC Driver'
 #drver='FreeTDS'
 
