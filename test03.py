@@ -9,4 +9,4 @@ print("Postgres")
 
 database=BaseDD(servidor='Ares2', usuario='postgres',clave='Emilita01',db='Prueba',puerto='5432',drver='', motor='Postgres')
 print(database)
-database.ejecutar_query("select 'Hola'")
+database.ejecutar_query("SELECT version();")
