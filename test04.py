@@ -3,7 +3,7 @@ from psycopg2 import Error
 
 try:
     # Connect to an existing database
-    connection = psycopg2.connect(user="postgres",
+    connection = psycopg2.connect(user="wbarraza",
                                   password="Emilita01",
                                   host="localhost",
                                   port="5432",
@@ -19,6 +19,7 @@ try:
     # Fetch result
     record = cursor.fetchone()
     print("You are connected to - ", record, "\n")
+
 
 except (Exception, Error) as error:
     print("Error while connecting to PostgreSQL", error)
