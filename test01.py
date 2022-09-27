@@ -13,7 +13,7 @@ db='master'
 puerto=4100
 #drver='Adaptive Server Enterprise'
 #drver='/usr/lib/x86_64-linux-gnu/libodbc.so'
-drver='/home/wbarraza/sap/DataAccess64/ODBC/lib/libsybdrvodb.so'
+drver='/opt/sap/DataAccess64/ODBC/lib/libsybdrvodb.so'
 #drver='Sybase ASE ODBC Driver'
 #drver='FreeTDS'
 
