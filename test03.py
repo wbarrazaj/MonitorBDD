@@ -4,3 +4,4 @@ database=BaseDD(servidor='Ares', usuario='root',clave='Emilita01',db='Prueba',pu
 print(database)
 database.ejecutar_query("select 'Hola'")
 
+print("Hola")
