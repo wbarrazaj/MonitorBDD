@@ -35,8 +35,6 @@ class BaseDD():
                                     password=self.PasswordDB,
                                     db=self.SchemaDBD
                                     ) 
-
-            print("MYSQL")
         elif self.Motor=='Postgres':
             conn = psycopg2.connect(
                                     user=self.UsuarioDB,
@@ -57,9 +55,7 @@ class BaseDD():
             conn.close()
             print("Ejecucion Sybase")
         elif self.Motor in ('Mysql','MariaDB'):
-            print('Aqui 1')
             cursor = conn.cursor()
-            print('Aqui 2')
             cursor.execute(query)
             resultado=cursor.fetchone()
             print(resultado)
