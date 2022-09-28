@@ -1,6 +1,7 @@
 import pyodbc 
 import pymysql
 import psycopg2
+from psycopg2 import Error
 
 
 
@@ -36,13 +37,20 @@ class BaseDD():
                                     db=self.SchemaDBD
                                     ) 
         elif self.Motor=='Postgres':
-            conn = psycopg2.connect(
-                                    user=self.UsuarioDB,
-                                    password=self.PasswordDB,
-                                    host=self.ServidorDB,
-                                    port=self.Port,
-                                    database=self.SchemaDBD
-                                    )
+            try:
+                conn = psycopg2.connect(
+                                        user=self.UsuarioDB,
+                                        password=self.PasswordDB,
+                                        host=self.ServidorDB,
+                                        port=self.Port,
+                                        database=self.SchemaDBD
+                                        )
+            except (Exception, Error) as error:
+                print("Error while connecting to PostgreSQL", error)
+            finally:
+                if (conn):
+                    conn.close()
+                    print("PostgreSQL connection is closed")
         return conn
 
     def ejecutar_query(self, query):
