@@ -2,6 +2,7 @@ import pyodbc
 import pymysql
 import psycopg2
 
+
 class BaseDD():
     """
     Server class de Conexion.
